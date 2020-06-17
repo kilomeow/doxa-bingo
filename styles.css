@@ -1,0 +1,38 @@
+#bingo {
+  margin: 0 auto;
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 40em;
+}
+
+#bingo div {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    flex: 1 0 auto;
+
+    transition: all 0.3s ease-out;
+}
+
+#bingo div:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+#bingo .inactive {
+    background-color: grey;
+}
+
+#bingo .active {
+    background-color: tomato;
+}
+
+
